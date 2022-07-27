@@ -1,14 +1,6 @@
 [
   
     {
-      "title"    : "Welcome to Jekyll!",
-      "description" : "",
-      "tags"     : "",
-      "url"      : "/welcome-to-jekyll/",
-      "date"     : "2020-08-29 09:29:20 +0700"
-    } ,
-  
-    {
       "title"    : "Cara ribet memperbarui forked repo",
       "description" : "Ada dua cara untuk memperbarui forked repository menggunakan web interface yang disediakan oleh github tapi ribet, atau melalui terminal yang lebih ribet lagi.",
       "tags"     : "tips, git, software",

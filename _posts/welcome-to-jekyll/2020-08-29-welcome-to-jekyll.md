@@ -1,26 +1,19 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2020-08-29 09:29:20 +0700
+title:  "Git 접속용 SSH Public Key 등록/수정"
+date:   2022-07-27 23:10:00 +0700
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+우리 회사는 AWS로 Redmine과 Git서버를 연동하여 사용중이다. 
+직원 한 분이 잘 되던 Git에 접속이 안된다고 했다.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+SSH Key로 접속하기 때문에 사용하던 키를 새롭게 변경하고자 직원에게 id_rsa Key를 생성해달라고 하고 공개키를 전달받았다. 
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+전달받은 키를 authorized_key에 등록해야 한다.
 
-Jekyll also offers powerful support for code snippets:
+서버 ssh에 접속 후 ~/.ssh/authorized_key 파일 내의 직원 key를 교체 해준다.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
